@@ -1,0 +1,61 @@
+[{
+    "PageID": 1,
+    "PageTitle": "Approval",
+    "BreadCrums": {
+        "0": {"title":"Sales", "link":"#","saperator":"1"},
+        "1": {"title":"Approval", "link":"#","saperator":"0"}
+    },
+    "TopTabs": {
+        "0": {
+            "title": "Pending",
+            "id":"pending-tab",
+            "Icon": "far fa-clock",
+            "color":"accent",
+            "Count": "1",
+            "Details": "All Pending Approvals",
+            "Type": "Status",
+            "typeVal": "1"
+        },
+        "1": {
+            "title": "On Hold",
+            "id":"onhold-tab",
+            "Icon": "fas fa-exclamation-triangle",
+            "color":"info",
+            "Count": "6",
+            "Details": "All On Hold Approvals",
+            "Type": "Status",
+            "typeVal": "2"
+        },
+        "2": {
+            "title": "Customer Credit",
+            "id":"customer-credit",
+            "Icon": "fas fa-dollar-sign",
+            "color":"brand",
+            "Count": "1",
+            "Details": "All Customer Credit Approvals",
+            "Type": "Approval",
+            "typeVal": "2"
+        },
+        "3": {
+            "title": "Profit Margin",
+            "id":"profit-margin",
+            "Icon": "fa fa-percent",
+            "Count": "5",
+            "color":"success",
+            "Details": "All Profit Margin Approvals",
+            "Type": "Approval",
+            "typeVal": "1"
+        },
+        "4": {
+            "title": "Customer Data",
+            "id":"customer-data",
+            "Icon": "fas fa-user",
+            "color":"metal",
+            "Count": "1",
+            "Details": "All Customer Data Approvals",
+            "Type": "Approval",
+            "typeVal": "3"
+        }
+
+    }
+}]
