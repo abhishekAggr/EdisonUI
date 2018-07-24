@@ -50,6 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <!--RTL version:<link href="assets/vendors/base/vendors.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
     <link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/vendors/custom/custom/custom.css" rel="stylesheet" type="text/css" />
 
     <!--RTL version:<link href="assets/demo/default/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
 
@@ -89,7 +90,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                             </ul>
                         </div>
-                        <div class="mr-auto m--bg-light m--padding-5">
+                        <div class="mr-auto ">
 
                             <h3 class="m-subheader__title" id="page-title"></h3>
 
@@ -100,7 +101,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                 <!-- END: Subheader -->
 
-                <div class="m-content">
+                <div class="m-content m--padding-top-5">
                     <!--<div class="m-alert m-alert--icon m-alert--air m-alert--square alert alert-dismissible m--margin-bottom-30" role="alert">
                             <div class="m-alert__icon">
                                 <i class="flaticon-exclamation m--font-brand"></i>
@@ -138,24 +139,32 @@ License: You must have a valid license purchased only from themeforest(the above
                             <form class="m-form m-form--fit m--margin-bottom-20">
                                 <div class="row m--margin-bottom-20">
                                     <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
-                                        <label>Approval:</label>
+                                        <label>Approvals:</label>
                                         <select class="form-control m-input" data-col-index="4">
                                             <option value="">Select</option>
                                         </select>
                                     </div>
 
                                     <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
-                                        <label>TurnOver:</label>
-                                        <select class="form-control m-input" data-col-index="5">
-                                            <option value="">Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
                                         <label>Status:</label>
                                         <select class="form-control m-input" data-col-index="6">
-                                            <option value="">Select</option>
+                                            <option value="">All</option>
                                         </select>
                                     </div>
+                                    
+                                    <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+                                            <label>Employee:</label>
+                                            <select class="form-control m-input">
+                                                <option value="">Myself</option>
+                                            </select>
+                                        </div>
+
+                                    <!-- <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+                                            <label>TurnOver:</label>
+                                            <select class="form-control m-input" data-col-index="5">
+                                                <option value="">Select</option>
+                                            </select>
+                                        </div> -->
                                     <div class="col-lg-3 m--margin-top-10-tablet-and-mobile">
                                         <br/>
 
@@ -182,7 +191,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                             <table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
                                 <thead>
-                                    <tr>
+                                    <tr class="m--bg--secondary">
                                         <th>ID</th>
                                         <th>Request Date</th>
                                         <th>Customer ID</th>
@@ -235,7 +244,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 $(this).load('theme/header.html');
                 nxt();
             });
-            //$("#m_header").load("header.html");
+            
             $("#ff1").load("theme/footer.html");
             $("#sidenavh").load("theme/sidenav.html");
             $("#quicksidebar").load("theme/quicksidebar.html");

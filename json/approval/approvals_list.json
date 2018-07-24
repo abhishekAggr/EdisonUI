@@ -29,7 +29,7 @@
             "Customer": "John E. Sanders - Terra",
             "Approval": 2,
             "TurnOver": 3,
-            "Status": 3
+            "Status": 2
         },
         {
             "RecordID": 4,
@@ -56,7 +56,7 @@
             "Customer": "William A. Griswold - Millenia Life",
             "Approval": 1,
             "TurnOver": 2,
-            "Status": 2
+            "Status": 1
         },
         {
             "RecordID": 7,

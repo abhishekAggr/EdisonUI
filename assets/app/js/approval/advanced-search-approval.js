@@ -16,7 +16,7 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
             'success': function (data) {
 				renderPageTitle(data[0].PageTitle);
 				renderBreadcrumbs(data[0].BreadCrums);
-				renderTobTabs(data[0].TopTabs);
+				renderTopTabs(data[0].TopTabs);
 			}
 			
         });
@@ -31,7 +31,7 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
 			$("#breadcrumb").append(`
 			<li class="m-nav__item">
 							<a href="${value.link}" class="m-nav__link">
-								<span class="m-nav__link-text">${value.title}</span>
+								<span class="m-nav__link-text m--font-darkblue">${value.title}</span>
 							</a>
 						</li>`);
 
@@ -43,28 +43,25 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
 		});
 	}
 
-	var renderTobTabs = function(data){
+	var renderTopTabs = function(data){
 		$.each(data, function(key, value){
 
 			$("#approval-top-tab").append(`
-			<div class=" col  btn m-btn--custom m--padding-top-10 m--padding-bottom-10  
+			<div class=" col  btn m-btn--custom m-btn--square m--padding-top-10 m--padding-bottom-10  
 			m--margin-right-5 m--margin-top-5  m--padding-left-5 m--padding-right-5  m-btn--outline btn-outline-${value.color}" id=${value.id}>
 			
 			<div class="row">
-				<div class="col  col-xl-8">
+				<div class="col  col-xl-9">
 					<h6>
-						<i class="${value.Icon}"></i> &nbsp; ${value.title}</h6>
+						<i class="${value.Icon}"></i> &nbsp; ${value.title}
+					</h6>
+					<span class="m--icon-font-size-sm5 m-badge--gray">${value.Details}</span>
+				</div>
+				<div class="col col-xl-3">
+					<h2>${value.Count}</h2>
+				</div>
+			</div>
 
-				</div>
-				<div class="col col-xl-4">
-					<h6>${value.Count}</h6>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col  col-xl-12">
-					<span class="m-widget24__desc">${value.Details}</span>
-				</div>
-			</div>
 			<!--end::Total Profit-->
 
 		</div>
@@ -158,16 +155,24 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
 
 			columnDefs: [
 				{
+					'targets': 0,
+					'searchable': false,
+					'orderable': false,
+					'className': 'dt-body-center',
+					'render': function (data, type, full, meta){
+						return '<input type="checkbox" name="id[]" value="' + $('<div/>').text(data).html() + '">';
+					}
+				 },
+				{
 					targets: -1,
 					title: 'Actions',
 					orderable: false,
 					render: function(data, type, full, meta) {
 						return `
-						   <a href="#" class="btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill" data-toggle="dropdown" 
-						   aria-expanded="true" title="Accept">
+						   <a href="#" class="btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill" aria-expanded="true" title="Accept">
                               <i class="la la-check"></i>
                             </a>
-							<span class="btn m-btn m-btn-light m-btn--icon m-btn--icon-only m-btn--pill" data-toggle="dropdown" aria-expanded="true"
+							<span class="btn m-btn m-btn-light m-btn--icon m-btn--icon-only m-btn--pill"  aria-expanded="true"
 							 title="Hold">
 							<i class="la la-pause"></i>
 						  </span>  
@@ -215,14 +220,14 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
 					targets: 6,
 					render: function(data, type, full, meta) {
 						var status = {
-							1: {'title': 'Pending', 'state': 'danger'},
-							2: {'title': 'On Hold', 'state': 'primary'},
+							1: {'title': 'Pending', 'state': 'dark'},
+							2: {'title': 'On Hold', 'state': 'info'},
 							3: {'title': 'Rejected', 'state': 'accent'},
 						};
 						if (typeof status[data] === 'undefined') {
 							return data;
 						}
-						return '<span class="m-badge m-badge--' + status[data].state + ' m-badge--wide">' + status[data].title + '</span>';
+						return '<span class="m-badge m--font-light m-badge--' + status[data].state + ' m-badge--wide">' + status[data].title + '</span>';
 						
 					},
                 },
@@ -246,11 +251,9 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
 				var i = $(this).data('col-index');
 				if (params[i]) {
                     params[i] += '|' + $(this).val();
-                    console.log(`if params[i] ${params[i]} i valye ${i}`);
 				}
 				else {
                     params[i] = $(this).val();
-                    console.log(`else params[i] ${params[i]} i valye ${i}`);
 				}
 			});
 			$.each(params, function(i, val) {

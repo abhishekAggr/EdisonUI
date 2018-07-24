@@ -11,7 +11,7 @@
             "id":"pending-tab",
             "Icon": "far fa-clock",
             "color":"accent",
-            "Count": "1",
+            "Count": "2",
             "Details": "All Pending Approvals",
             "Type": "Status",
             "typeVal": "1"
@@ -31,7 +31,7 @@
             "id":"customer-credit",
             "Icon": "fas fa-dollar-sign",
             "color":"brand",
-            "Count": "1",
+            "Count": "6",
             "Details": "All Customer Credit Approvals",
             "Type": "Approval",
             "typeVal": "2"
@@ -40,7 +40,7 @@
             "title": "Profit Margin",
             "id":"profit-margin",
             "Icon": "fa fa-percent",
-            "Count": "5",
+            "Count": "2",
             "color":"success",
             "Details": "All Profit Margin Approvals",
             "Type": "Approval",
@@ -51,7 +51,7 @@
             "id":"customer-data",
             "Icon": "fas fa-user",
             "color":"metal",
-            "Count": "1",
+            "Count": "2",
             "Details": "All Customer Data Approvals",
             "Type": "Approval",
             "typeVal": "3"

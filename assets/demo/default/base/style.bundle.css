@@ -8149,6 +8149,56 @@ a.text-dark:hover, a.text-dark:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(244, 81, 108, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(244, 81, 108, 0.5); }
 
+.btn-gray {
+  color: #212529;
+  background-color: #999999;
+  border-color: #999999; }
+  .btn-gray:hover {
+    color: #fff;
+    background-color: #868686;
+    border-color: gray; }
+  .btn-gray:focus, .btn-gray.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(153, 153, 153, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(153, 153, 153, 0.5); }
+  .btn-gray.disabled, .btn-gray:disabled {
+    color: #212529;
+    background-color: #999999;
+    border-color: #999999; }
+  .btn-gray:not(:disabled):not(.disabled):active, .btn-gray:not(:disabled):not(.disabled).active,
+  .show > .btn-gray.dropdown-toggle {
+    color: #fff;
+    background-color: gray;
+    border-color: #797979; }
+    .btn-gray:not(:disabled):not(.disabled):active:focus, .btn-gray:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-gray.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(153, 153, 153, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(153, 153, 153, 0.5); }
+
+.btn-outline-gray {
+  color: #999999;
+  background-color: transparent;
+  background-image: none;
+  border-color: #999999; }
+  .btn-outline-gray:hover {
+    color: #ffffff;
+    background-color: #999999;
+    border-color: #999999; }
+  .btn-outline-gray:focus, .btn-outline-gray.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(153, 153, 153, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(153, 153, 153, 0.5); }
+  .btn-outline-gray.disabled, .btn-outline-gray:disabled {
+    color: #999999;
+    background-color: transparent; }
+  .btn-outline-gray:not(:disabled):not(.disabled):active, .btn-outline-gray:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-gray.dropdown-toggle {
+    color: #212529;
+    background-color: #999999;
+    border-color: #999999; }
+    .btn-outline-gray:not(:disabled):not(.disabled):active:focus, .btn-outline-gray:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-gray.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(153, 153, 153, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(153, 153, 153, 0.5); }
+
 .btn-darkblue {
   color: #fff;
   background-color: #245488;
@@ -8558,6 +8608,27 @@ a.text-dark:hover, a.text-dark:focus {
         color: #ffffff; }
       .alert.m-alert--outline.alert-danger.m-alert--icon-solid .m-alert__icon span {
         border-left-color: #f4516c/*rtl:ignore*/; }
+  .alert.m-alert--outline.alert-gray {
+    color: #575962;
+    background-color: #ffffff;
+    border-color: #999999;
+    color: #999999;
+    font-weight: 400; }
+    .alert.m-alert--outline.alert-gray hr {
+      border-top-color: #8c8c8c; }
+    .alert.m-alert--outline.alert-gray .alert-link {
+      color: #3f4047; }
+    .alert.m-alert--outline.alert-gray .close {
+      color: #999999; }
+    .alert.m-alert--outline.alert-gray .m-alert__icon i {
+      color: #999999; }
+    .alert.m-alert--outline.alert-gray.m-alert--icon-solid .m-alert__icon {
+      position: relative;
+      background: #999999; }
+      .alert.m-alert--outline.alert-gray.m-alert--icon-solid .m-alert__icon i {
+        color: #ffffff; }
+      .alert.m-alert--outline.alert-gray.m-alert--icon-solid .m-alert__icon span {
+        border-left-color: #999999/*rtl:ignore*/; }
   .alert.m-alert--outline.alert-darkblue {
     color: #575962;
     background-color: #ffffff;
@@ -8690,6 +8761,17 @@ a.text-dark:hover, a.text-dark:focus {
   .alert-danger:not(.m-alert--outline) .alert-link {
     color: #e6e6e6; }
   .alert-danger:not(.m-alert--outline) .close {
+    color: white; }
+
+.alert-gray:not(.m-alert--outline) {
+  color: white;
+  background-color: #a8a8a8;
+  border-color: #a1a1a1; }
+  .alert-gray:not(.m-alert--outline) hr {
+    border-top-color: #949494; }
+  .alert-gray:not(.m-alert--outline) .alert-link {
+    color: #e6e6e6; }
+  .alert-gray:not(.m-alert--outline) .close {
     color: white; }
 
 .alert-darkblue:not(.m-alert--outline) {
@@ -8890,6 +8972,18 @@ a.text-dark:hover, a.text-dark:focus {
   background: #f4516c;
   color: #ffffff; }
   .nav.nav-pills.nav-pills--danger .nav-item.show .nav-link i {
+    color: #f0f0f0; }
+
+.nav.nav-pills.nav-pills--gray .nav-link.active {
+  background: #999999;
+  color: #ffffff; }
+  .nav.nav-pills.nav-pills--gray .nav-link.active i {
+    color: #f0f0f0; }
+
+.nav.nav-pills.nav-pills--gray .nav-item.show .nav-link {
+  background: #999999;
+  color: #ffffff; }
+  .nav.nav-pills.nav-pills--gray .nav-item.show .nav-link i {
     color: #f0f0f0; }
 
 .nav.nav-pills.nav-pills--darkblue .nav-link.active {
@@ -11498,6 +11592,19 @@ strong {
 
 .m--bg-fill-danger {
   background-color: #f4516c !important;
+  color: #ffffff !important; }
+
+.m--font-gray {
+  color: #999999 !important; }
+
+.m--font-inverse-gray {
+  color: #ffffff !important; }
+
+.m--bg-gray {
+  background-color: #999999 !important; }
+
+.m--bg-fill-gray {
+  background-color: #999999 !important;
   color: #ffffff !important; }
 
 .m--font-darkblue {
@@ -15078,6 +15185,18 @@ strong {
     .m-tabs-line.m-tabs-line--danger a.m-tabs__link:hover > i,
     .m-tabs-line.m-tabs-line--danger a.m-tabs__link.active > i {
       color: #f66980; }
+  .m-tabs-line.m-tabs-line--gray.nav.nav-tabs .nav-link:hover,
+  .m-tabs-line.m-tabs-line--gray a.m-tabs__link:hover {
+    border-bottom: 1px solid #999999; }
+  .m-tabs-line.m-tabs-line--gray.nav.nav-tabs .nav-link:hover, .m-tabs-line.m-tabs-line--gray.nav.nav-tabs .nav-link.active,
+  .m-tabs-line.m-tabs-line--gray a.m-tabs__link:hover,
+  .m-tabs-line.m-tabs-line--gray a.m-tabs__link.active {
+    color: #999999;
+    border-bottom: 1px solid #999999; }
+    .m-tabs-line.m-tabs-line--gray.nav.nav-tabs .nav-link:hover > i, .m-tabs-line.m-tabs-line--gray.nav.nav-tabs .nav-link.active > i,
+    .m-tabs-line.m-tabs-line--gray a.m-tabs__link:hover > i,
+    .m-tabs-line.m-tabs-line--gray a.m-tabs__link.active > i {
+      color: #a6a6a6; }
   .m-tabs-line.m-tabs-line--darkblue.nav.nav-tabs .nav-link:hover,
   .m-tabs-line.m-tabs-line--darkblue a.m-tabs__link:hover {
     border-bottom: 1px solid #245488; }
@@ -15236,6 +15355,18 @@ strong {
     .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--danger a.m-tabs__link:hover > i,
     .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--danger a.m-tabs__link.active > i {
       color: #f66980; }
+  .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray.nav.nav-tabs .nav-link:hover,
+  .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray a.m-tabs__link:hover {
+    border-bottom: 1px solid #999999; }
+  .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray.nav.nav-tabs .nav-link:hover, .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray.nav.nav-tabs .nav-link.active,
+  .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray a.m-tabs__link:hover,
+  .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray a.m-tabs__link.active {
+    color: #999999;
+    border-bottom: 1px solid #999999; }
+    .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray.nav.nav-tabs .nav-link:hover > i, .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray.nav.nav-tabs .nav-link.active > i,
+    .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray a.m-tabs__link:hover > i,
+    .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--gray a.m-tabs__link.active > i {
+      color: #a6a6a6; }
   .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--darkblue.nav.nav-tabs .nav-link:hover,
   .m-tabs-line.m-tabs-line--skin-dark.m-tabs-line--darkblue a.m-tabs__link:hover {
     border-bottom: 1px solid #245488; }
@@ -15361,6 +15492,13 @@ strong {
 
 .m-badge.m-badge-bordered--danger {
   border-color: #f4516c; }
+
+.m-badge.m-badge--gray {
+  background-color: #999999;
+  color: #ffffff; }
+
+.m-badge.m-badge-bordered--gray {
+  border-color: #999999; }
 
 .m-badge.m-badge--darkblue {
   background-color: #245488;
@@ -15493,6 +15631,15 @@ strong {
     color: #f12143; }
     .m-link.m-link--danger:hover:after {
       border-bottom: 1px solid #f12143;
+      opacity: 0.3 ;
+      filter: alpha(opacity=30) ; }
+
+.m-link.m-link--gray {
+  color: #999999; }
+  .m-link.m-link--gray:hover {
+    color: gray; }
+    .m-link.m-link--gray:hover:after {
+      border-bottom: 1px solid gray;
       opacity: 0.3 ;
       filter: alpha(opacity=30) ; }
 
@@ -15634,6 +15781,11 @@ strong {
   .m-separator.m-separator--danger.m-separator--dashed {
     border-bottom: 1px dashed #f4516c; }
 
+.m-separator.m-separator--gray {
+  border-bottom: 1px solid #999999; }
+  .m-separator.m-separator--gray.m-separator--dashed {
+    border-bottom: 1px dashed #999999; }
+
 .m-separator.m-separator--darkblue {
   border-bottom: 1px solid #245488; }
   .m-separator.m-separator--darkblue.m-separator--dashed {
@@ -15745,6 +15897,7 @@ code {
     padding: 0.75rem 2rem;
     font-size: 1rem;
     font-weight: 400;
+    background-color:#fff;
     font-family: Poppins; }
     .btn.m-btn--custom.btn-sm, .btn-group-sm > .btn.m-btn--custom {
       padding: 0.5rem 1rem;
@@ -15772,6 +15925,8 @@ code {
     color: #ffb822; }
   .btn.m-btn--label-danger {
     color: #f4516c; }
+  .btn.m-btn--label-gray {
+    color: #999999; }
   .btn.m-btn--label-darkblue {
     color: #245488; }
   .btn.m-btn--uppercase {
@@ -16370,6 +16525,40 @@ code {
   .btn + .btn.dropdown-toggle:hover:before, .btn + .btn.dropdown-toggle:focus:before, .btn + .btn.dropdown-toggle.active:before {
     display: none; }
 
+.btn-outline-gray.m-btn--air,
+.btn-gray.m-btn--air,
+.m-btn--gradient-from-gray.m-btn--air {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(153, 153, 153, 0.19) !important;
+  box-shadow: 0px 5px 10px 2px rgba(153, 153, 153, 0.19) !important; }
+  .btn-outline-gray.m-btn--air.focus, .btn-outline-gray.m-btn--air:focus, .btn-outline-gray.m-btn--air:hover,
+  .btn-gray.m-btn--air.focus,
+  .btn-gray.m-btn--air:focus,
+  .btn-gray.m-btn--air:hover,
+  .m-btn--gradient-from-gray.m-btn--air.focus,
+  .m-btn--gradient-from-gray.m-btn--air:focus,
+  .m-btn--gradient-from-gray.m-btn--air:hover {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(153, 153, 153, 0.36) !important;
+    box-shadow: 0px 5px 10px 2px rgba(153, 153, 153, 0.36) !important; }
+
+.btn-outline-gray.focus, .btn-outline-gray:focus, .btn-outline-gray:hover {
+  border-color: #999999;
+  background: #999999;
+  color: #ffffff; }
+
+.btn + .btn.dropdown-toggle {
+  position: relative; }
+  .btn + .btn.dropdown-toggle:before {
+    display: block;
+    content: ' ';
+    border-left: 1px solid #ffffff;
+    position: absolute;
+    top: 3px;
+    left: -1px;
+    bottom: 3px;
+    opacity: 0.3; }
+  .btn + .btn.dropdown-toggle:hover:before, .btn + .btn.dropdown-toggle:focus:before, .btn + .btn.dropdown-toggle.active:before {
+    display: none; }
+
 .btn-outline-darkblue.m-btn--air,
 .btn-darkblue.m-btn--air,
 .m-btn--gradient-from-darkblue.m-btn--air {
@@ -16621,6 +16810,23 @@ button:active, button:focus {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #f8a715 30%, #f23454 100%);
       /* Standard syntax */ }
+  .btn.m-btn--gradient-from-brand.m-btn--gradient-to-gray {
+    background: #f9b233;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #f9b233 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-brand.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-brand.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-brand.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-brand.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-brand.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #f8a715;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #f8a715 30%, #8a8a8a 100%);
+      /* Standard syntax */ }
   .btn.m-btn--gradient-from-brand.m-btn--gradient-to-darkblue {
     background: #f9b233;
     /* For browsers that do not support gradients */
@@ -16836,6 +17042,23 @@ button:active, button:focus {
       /* For Opera 11.1 to 12.0 */
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #880be1 30%, #f23454 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-metal.m-btn--gradient-to-gray {
+    background: #9816f4;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #9816f4 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-metal.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-metal.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-metal.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-metal.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-metal.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #880be1;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #880be1 30%, #8a8a8a 100%);
       /* Standard syntax */ }
   .btn.m-btn--gradient-from-metal.m-btn--gradient-to-darkblue {
     background: #9816f4;
@@ -17053,6 +17276,23 @@ button:active, button:focus {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #f0f0f0 30%, #f23454 100%);
       /* Standard syntax */ }
+  .btn.m-btn--gradient-from-light.m-btn--gradient-to-gray {
+    background: #ffffff;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #ffffff 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-light.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-light.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-light.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-light.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-light.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #f0f0f0;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #f0f0f0 30%, #8a8a8a 100%);
+      /* Standard syntax */ }
   .btn.m-btn--gradient-from-light.m-btn--gradient-to-darkblue {
     background: #ffffff;
     /* For browsers that do not support gradients */
@@ -17268,6 +17508,23 @@ button:active, button:focus {
       /* For Opera 11.1 to 12.0 */
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #1e4570 30%, #f23454 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-accent.m-btn--gradient-to-gray {
+    background: #245488;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #245488 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-accent.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-accent.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-accent.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-accent.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-accent.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #1e4570;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #1e4570 30%, #8a8a8a 100%);
       /* Standard syntax */ }
   .btn.m-btn--gradient-from-accent.m-btn--gradient-to-darkblue {
     background: #245488;
@@ -17485,6 +17742,23 @@ button:active, button:focus {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #f06e02 30%, #f23454 100%);
       /* Standard syntax */ }
+  .btn.m-btn--gradient-from-focus.m-btn--gradient-to-gray {
+    background: #fd7e14;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #fd7e14 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-focus.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-focus.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-focus.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-focus.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-focus.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #f06e02;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #f06e02 30%, #8a8a8a 100%);
+      /* Standard syntax */ }
   .btn.m-btn--gradient-from-focus.m-btn--gradient-to-darkblue {
     background: #fd7e14;
     /* For browsers that do not support gradients */
@@ -17700,6 +17974,23 @@ button:active, button:focus {
       /* For Opera 11.1 to 12.0 */
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #f8a715 30%, #f23454 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-primary.m-btn--gradient-to-gray {
+    background: #f9b233;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #f9b233 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-primary.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-primary.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-primary.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-primary.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-primary.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #f8a715;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #f8a715 30%, #8a8a8a 100%);
       /* Standard syntax */ }
   .btn.m-btn--gradient-from-primary.m-btn--gradient-to-darkblue {
     background: #f9b233;
@@ -17917,6 +18208,23 @@ button:active, button:focus {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #2da78e 30%, #f23454 100%);
       /* Standard syntax */ }
+  .btn.m-btn--gradient-from-success.m-btn--gradient-to-gray {
+    background: #34bfa3;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #34bfa3 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-success.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-success.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-success.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-success.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-success.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #2da78e;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #2da78e 30%, #8a8a8a 100%);
+      /* Standard syntax */ }
   .btn.m-btn--gradient-from-success.m-btn--gradient-to-darkblue {
     background: #34bfa3;
     /* For browsers that do not support gradients */
@@ -18132,6 +18440,23 @@ button:active, button:focus {
       /* For Opera 11.1 to 12.0 */
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #1996f6 30%, #f23454 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-info.m-btn--gradient-to-gray {
+    background: #36a3f7;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #36a3f7 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-info.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-info.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-info.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-info.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-info.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #1996f6;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #1996f6 30%, #8a8a8a 100%);
       /* Standard syntax */ }
   .btn.m-btn--gradient-from-info.m-btn--gradient-to-darkblue {
     background: #36a3f7;
@@ -18349,6 +18674,23 @@ button:active, button:focus {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #ffae03 30%, #f23454 100%);
       /* Standard syntax */ }
+  .btn.m-btn--gradient-from-warning.m-btn--gradient-to-gray {
+    background: #ffb822;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #ffb822 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-warning.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-warning.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-warning.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-warning.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-warning.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #ffae03;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #ffae03 30%, #8a8a8a 100%);
+      /* Standard syntax */ }
   .btn.m-btn--gradient-from-warning.m-btn--gradient-to-darkblue {
     background: #ffb822;
     /* For browsers that do not support gradients */
@@ -18565,6 +18907,23 @@ button:active, button:focus {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #f23454 30%, #f23454 100%);
       /* Standard syntax */ }
+  .btn.m-btn--gradient-from-danger.m-btn--gradient-to-gray {
+    background: #f4516c;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #f4516c 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-danger.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-danger.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-danger.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-danger.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-danger.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #f23454;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #f23454 30%, #8a8a8a 100%);
+      /* Standard syntax */ }
   .btn.m-btn--gradient-from-danger.m-btn--gradient-to-darkblue {
     background: #f4516c;
     /* For browsers that do not support gradients */
@@ -18591,6 +18950,239 @@ button:active, button:focus {
 .btn.btn-outline-danger {
   color: #f4516c; }
   .btn.btn-outline-danger.active, .btn.btn-outline-danger.focus, .btn.btn-outline-danger:focus, .btn.btn-outline-danger:hover:not(:disabled) {
+    color: #ffffff !important; }
+
+.btn.m-btn--hover-gray:not(.btn-secondary):not(.btn-outline-light) {
+  background: none;
+  color: #575962; }
+  .btn.m-btn--hover-gray:not(.btn-secondary):not(.btn-outline-light) i {
+    color: #898b96; }
+
+.btn.m-btn--hover-gray:hover, .btn.m-btn--hover-gray.active, .btn.m-btn--hover-gray:active, .btn.m-btn--hover-gray:focus,
+.show > .btn.m-btn--hover-gray.dropdown-toggle {
+  border-color: #999999 !important;
+  color: #ffffff !important;
+  background-color: #999999 !important; }
+  .btn.m-btn--hover-gray:hover i, .btn.m-btn--hover-gray.active i, .btn.m-btn--hover-gray:active i, .btn.m-btn--hover-gray:focus i,
+  .show > .btn.m-btn--hover-gray.dropdown-toggle i {
+    color: #ffffff !important; }
+
+.btn.m-btn--gradient-from-gray {
+  color: #ffffff;
+  border: 0 !important; }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-brand {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #f9b233 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-brand:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-brand.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-brand:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-brand:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-brand.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #f8a715 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-metal {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #9816f4 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-metal:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-metal.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-metal:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-metal:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-metal.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #880be1 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-light {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #ffffff 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-light:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-light.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-light:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-light:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-light.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #f0f0f0 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-accent {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #245488 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-accent:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-accent.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-accent:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-accent:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-accent.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #1e4570 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-focus {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #fd7e14 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-focus:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-focus.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-focus:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-focus:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-focus.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #f06e02 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-primary {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #f9b233 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-primary:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-primary.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-primary:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-primary:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-primary.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #f8a715 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-success {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #34bfa3 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-success:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-success.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-success:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-success:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-success.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #2da78e 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-info {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #36a3f7 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-info:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-info.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-info:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-info:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-info.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #1996f6 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-warning {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #ffb822 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-warning:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-warning.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-warning:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-warning:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-warning.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #ffae03 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-danger {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #f4516c 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-danger:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-danger.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-danger:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-danger:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-danger.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #f23454 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-gray {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #8a8a8a 100%);
+      /* Standard syntax */ }
+  .btn.m-btn--gradient-from-gray.m-btn--gradient-to-darkblue {
+    background: #999999;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #999999 30%, #245488 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-gray.m-btn--gradient-to-darkblue:hover, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-darkblue.active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-darkblue:active, .btn.m-btn--gradient-from-gray.m-btn--gradient-to-darkblue:focus,
+    .show > .btn.m-btn--gradient-from-gray.m-btn--gradient-to-darkblue.dropdown-toggle {
+      background: #8a8a8a;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #8a8a8a 30%, #1e4570 100%);
+      /* Standard syntax */ }
+
+.btn.btn-gray {
+  color: #ffffff; }
+  .btn.btn-gray.active, .btn.btn-gray.focus, .btn.btn-gray:focus, .btn.btn-gray:hover:not(:disabled) {
+    color: #ffffff !important; }
+
+.btn.btn-outline-gray {
+  color: #999999; }
+  .btn.btn-outline-gray.active, .btn.btn-outline-gray.focus, .btn.btn-outline-gray:focus, .btn.btn-outline-gray:hover:not(:disabled) {
     color: #ffffff !important; }
 
 .btn.m-btn--hover-darkblue:not(.btn-secondary):not(.btn-outline-light) {
@@ -18781,6 +19373,23 @@ button:active, button:focus {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(135deg, #1e4570 30%, #f23454 100%);
       /* Standard syntax */ }
+  .btn.m-btn--gradient-from-darkblue.m-btn--gradient-to-gray {
+    background: #245488;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #245488 30%, #999999 100%);
+    /* Standard syntax */ }
+    .btn.m-btn--gradient-from-darkblue.m-btn--gradient-to-gray:hover, .btn.m-btn--gradient-from-darkblue.m-btn--gradient-to-gray.active, .btn.m-btn--gradient-from-darkblue.m-btn--gradient-to-gray:active, .btn.m-btn--gradient-from-darkblue.m-btn--gradient-to-gray:focus,
+    .show > .btn.m-btn--gradient-from-darkblue.m-btn--gradient-to-gray.dropdown-toggle {
+      background: #1e4570;
+      /* For browsers that do not support gradients */
+      /* For Safari 5.1 to 6.0 */
+      /* For Opera 11.1 to 12.0 */
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(135deg, #1e4570 30%, #8a8a8a 100%);
+      /* Standard syntax */ }
   .btn.m-btn--gradient-from-darkblue.m-btn--gradient-to-darkblue {
     background: #245488;
     /* For browsers that do not support gradients */
@@ -18907,6 +19516,9 @@ button:active, button:focus {
 .m-spinner.m-spinner--danger {
   background-color: #f4516c; }
 
+.m-spinner.m-spinner--gray {
+  background-color: #999999; }
+
 .m-spinner.m-spinner--darkblue {
   background-color: #245488; }
 
@@ -19020,6 +19632,9 @@ button:active, button:focus {
 
 .m-loader.m-loader--danger:before {
   border-top-color: #f4516c; }
+
+.m-loader.m-loader--gray:before {
+  border-top-color: #999999; }
 
 .m-loader.m-loader--darkblue:before {
   border-top-color: #245488; }
@@ -19319,6 +19934,9 @@ button:active, button:focus {
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--danger:before {
   background-color: #f4516c; }
 
+.m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--gray:before {
+  background-color: #999999; }
+
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--darkblue:before {
   background-color: #245488; }
 
@@ -19373,6 +19991,9 @@ button:active, button:focus {
 
 .m-list-timeline.m-list-timeline--skin-dark .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--danger:before {
   background-color: #f4516c; }
+
+.m-list-timeline.m-list-timeline--skin-dark .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--gray:before {
+  background-color: #999999; }
 
 .m-list-timeline.m-list-timeline--skin-dark .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--darkblue:before {
   background-color: #245488; }
@@ -19544,6 +20165,14 @@ button:active, button:focus {
 
 .m-list-badge .m-list-badge__items a.m-list-badge__item.m-list-badge__item--danger:hover {
   background: #f12143;
+  color: #ffffff; }
+
+.m-list-badge .m-list-badge__items .m-list-badge__item.m-list-badge__item--gray {
+  color: #ffffff;
+  background-color: #999999; }
+
+.m-list-badge .m-list-badge__items a.m-list-badge__item.m-list-badge__item--gray:hover {
+  background: gray;
   color: #ffffff; }
 
 .m-list-badge .m-list-badge__items .m-list-badge__item.m-list-badge__item--darkblue {
@@ -20621,6 +21250,9 @@ body.m-portlet--fullscreen {
     .m-portlet.m-portlet--creative .m-portlet__head .m-portlet__head-caption .m-portlet__head-label.m-portlet__head-label--danger {
       background: #f4516c;
       color: #ffffff; }
+    .m-portlet.m-portlet--creative .m-portlet__head .m-portlet__head-caption .m-portlet__head-label.m-portlet__head-label--gray {
+      background: #999999;
+      color: #ffffff; }
     .m-portlet.m-portlet--creative .m-portlet__head .m-portlet__head-caption .m-portlet__head-label.m-portlet__head-label--darkblue {
       background: #245488;
       color: #ffffff; }
@@ -20693,6 +21325,9 @@ body.m-portlet--fullscreen {
       color: #111111; }
     .m-portlet.m-portlet--skin-dark.m-portlet--creative .m-portlet__head .m-portlet__head-caption .m-portlet__head-label.m-portlet__head-label--danger {
       background: #f4516c;
+      color: #ffffff; }
+    .m-portlet.m-portlet--skin-dark.m-portlet--creative .m-portlet__head .m-portlet__head-caption .m-portlet__head-label.m-portlet__head-label--gray {
+      background: #999999;
       color: #ffffff; }
     .m-portlet.m-portlet--skin-dark.m-portlet--creative .m-portlet__head .m-portlet__head-caption .m-portlet__head-label.m-portlet__head-label--darkblue {
       background: #245488;
@@ -21300,6 +21935,66 @@ body.m-portlet--fullscreen {
 .m-portlet.m-portlet--border-bottom-danger {
   border-bottom: 3px solid #f4516c; }
 
+.m-portlet.m-portlet--gray.m-portlet--head-solid-bg {
+  background: #999999;
+  border-color: #999999; }
+  .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head {
+    background-color: #999999;
+    border-color: #999999; }
+    .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head .m-portlet__head-icon {
+      color: #f7f7f7; }
+    .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head .m-portlet__head-text {
+      color: #ffffff; }
+      .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head .m-portlet__head-text small {
+        color: #f0f0f0; }
+  .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-portlet__nav .m-portlet__nav-item .m-portlet__nav-link.m-portlet__nav-link--icon i {
+    color: #f7f7f7; }
+  .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-portlet__nav .m-portlet__nav-item .m-portlet__nav-link.m-portlet__nav-link--icon:hover i {
+    color: #ffffff; }
+  .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.1); }
+  .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line {
+    bottom: 0;
+    border: 0; }
+    .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__item {
+      margin: 0 1px 0 0; }
+      .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__item:last-child {
+        margin-right: 0; }
+    .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__link {
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #ffffff;
+      border: 0;
+      opacity: 0.8 ;
+      filter: alpha(opacity=80) ; }
+      .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__link > i {
+        color: #f0f0f0; }
+    .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__link:hover {
+      border-bottom: 0; }
+    .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__item.show .m-tabs__link,
+    .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__link:hover,
+    .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__link.active {
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 0;
+      opacity: 1 ;
+      filter: alpha(opacity=100) ;
+      background: none;
+      color: #ffffff;
+      border: 0;
+      background: rgba(255, 255, 255, 0.08); }
+      .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__item.show .m-tabs__link > i,
+      .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__link:hover > i,
+      .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__head-tools .m-tabs-line .m-tabs__link.active > i {
+        color: white; }
+  .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__body {
+    background: white; }
+  .m-portlet.m-portlet--gray.m-portlet--head-solid-bg .m-portlet__foot {
+    background: white; }
+
+.m-portlet.m-portlet--border-bottom-gray {
+  border-bottom: 3px solid #999999; }
+
 .m-portlet.m-portlet--darkblue.m-portlet--head-solid-bg {
   background: #245488;
   border-color: #245488; }
@@ -21758,6 +22453,9 @@ body.m-portlet--fullscreen {
 .m-timeline-3__item.m-timeline-3__item--danger:before {
   background: #f4516c; }
 
+.m-timeline-3__item.m-timeline-3__item--gray:before {
+  background: #999999; }
+
 .m-timeline-3__item.m-timeline-3__item--darkblue:before {
   background: #245488; }
 
@@ -21883,6 +22581,9 @@ body.m-portlet--fullscreen {
 
 .m-widget2__item.m-widget2__item--danger:before {
   background: #f4516c; }
+
+.m-widget2__item.m-widget2__item--gray:before {
+  background: #999999; }
 
 .m-widget2__item.m-widget2__item--darkblue:before {
   background: #245488; }
@@ -23952,6 +24653,36 @@ body.m-portlet--fullscreen {
       border: 1px solid transparent !important; }
     .m-checkbox.m-checkbox--danger.m-checkbox--solid > input:checked ~ span {
       background: #f4516c; }
+  .m-checkbox.m-checkbox--gray.m-checkbox--disabled {
+    opacity: 0.8 ;
+    filter: alpha(opacity=80) ; }
+  .m-checkbox.m-checkbox--gray > span {
+    border: 1px solid #bdc3d4; }
+    .m-checkbox.m-checkbox--gray > span:after {
+      border: solid #999999; }
+  .m-checkbox.m-checkbox--gray > input:disabled ~ span:after {
+    border-color: #999999; }
+  .m-checkbox.m-checkbox--gray > input:checked ~ span {
+    border: 1px solid #999999; }
+  .m-checkbox.m-checkbox--gray.m-checkbox--check-bold > input:checked ~ span {
+    border: 2px solid #999999; }
+  .m-checkbox.m-checkbox--gray > input:disabled ~ span {
+    opacity: 0.6 ;
+    filter: alpha(opacity=60) ; }
+  .m-checkbox.m-checkbox--gray.m-checkbox--solid {
+    /*
+        &:hover > input:not([disabled]) ~ span {
+            background: $color-solid-bg-hover; 
+        }
+        */ }
+    .m-checkbox.m-checkbox--gray.m-checkbox--solid > span {
+      border: 1px solid transparent !important; }
+      .m-checkbox.m-checkbox--gray.m-checkbox--solid > span:after {
+        border: solid #ffffff; }
+    .m-checkbox.m-checkbox--gray.m-checkbox--solid > input:focus ~ span {
+      border: 1px solid transparent !important; }
+    .m-checkbox.m-checkbox--gray.m-checkbox--solid > input:checked ~ span {
+      background: #999999; }
   .m-checkbox.m-checkbox--darkblue.m-checkbox--disabled {
     opacity: 0.8 ;
     filter: alpha(opacity=80) ; }
@@ -24342,6 +25073,38 @@ body.m-portlet--fullscreen {
       border: 1px solid transparent !important; }
     .m-radio.m-radio--danger.m-radio--solid > input:checked ~ span {
       background: #f4516c; }
+  .m-radio.m-radio--gray.m-radio--disabled {
+    opacity: 0.8 ;
+    filter: alpha(opacity=80) ; }
+  .m-radio.m-radio--gray > span {
+    border: 1px solid #bdc3d4; }
+    .m-radio.m-radio--gray > span:after {
+      border: solid #999999;
+      background: #999999; }
+  .m-radio.m-radio--gray > input:disabled ~ span:after {
+    border-color: #999999; }
+  .m-radio.m-radio--gray > input:checked ~ span {
+    border: 1px solid #999999; }
+  .m-radio.m-radio--gray.m-radio--check-bold > input:checked ~ span {
+    border: 2px solid #999999; }
+  .m-radio.m-radio--gray > input:disabled ~ span {
+    opacity: 0.6 ;
+    filter: alpha(opacity=60) ; }
+  .m-radio.m-radio--gray.m-radio--solid {
+    /*
+        &:hover > input:not([disabled]) ~ span {
+            background: $color-solid-bg-hover; 
+        }
+        */ }
+    .m-radio.m-radio--gray.m-radio--solid > span {
+      border: 1px solid transparent !important; }
+      .m-radio.m-radio--gray.m-radio--solid > span:after {
+        border: solid #ffffff;
+        background: #ffffff; }
+    .m-radio.m-radio--gray.m-radio--solid > input:focus ~ span {
+      border: 1px solid transparent !important; }
+    .m-radio.m-radio--gray.m-radio--solid > input:checked ~ span {
+      background: #999999; }
   .m-radio.m-radio--darkblue.m-radio--disabled {
     opacity: 0.8 ;
     filter: alpha(opacity=80) ; }
@@ -24712,6 +25475,36 @@ body.m-portlet--fullscreen {
       border: 1px solid transparent !important; }
     .m-checkbox.m-checkbox--skin-dark.m-checkbox--danger.m-checkbox--solid > input:checked ~ span {
       background: #f4516c; }
+  .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray.m-checkbox--disabled {
+    opacity: 0.8 ;
+    filter: alpha(opacity=80) ; }
+  .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray > span {
+    border: 1px solid #bdc3d4; }
+    .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray > span:after {
+      border: solid #999999; }
+  .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray > input:disabled ~ span:after {
+    border-color: #999999; }
+  .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray > input:checked ~ span {
+    border: 1px solid #999999; }
+  .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray.m-checkbox--check-bold > input:checked ~ span {
+    border: 2px solid #999999; }
+  .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray > input:disabled ~ span {
+    opacity: 0.6 ;
+    filter: alpha(opacity=60) ; }
+  .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray.m-checkbox--solid {
+    /*
+        &:hover > input:not([disabled]) ~ span {
+            background: $color-solid-bg-hover; 
+        }
+        */ }
+    .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray.m-checkbox--solid > span {
+      border: 1px solid transparent !important; }
+      .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray.m-checkbox--solid > span:after {
+        border: solid #ffffff; }
+    .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray.m-checkbox--solid > input:focus ~ span {
+      border: 1px solid transparent !important; }
+    .m-checkbox.m-checkbox--skin-dark.m-checkbox--gray.m-checkbox--solid > input:checked ~ span {
+      background: #999999; }
   .m-checkbox.m-checkbox--skin-dark.m-checkbox--darkblue.m-checkbox--disabled {
     opacity: 0.8 ;
     filter: alpha(opacity=80) ; }
@@ -25102,6 +25895,38 @@ body.m-portlet--fullscreen {
       border: 1px solid transparent !important; }
     .m-radio.m-radio--skin-dark.m-radio--danger.m-radio--solid > input:checked ~ span {
       background: #f4516c; }
+  .m-radio.m-radio--skin-dark.m-radio--gray.m-radio--disabled {
+    opacity: 0.8 ;
+    filter: alpha(opacity=80) ; }
+  .m-radio.m-radio--skin-dark.m-radio--gray > span {
+    border: 1px solid #bdc3d4; }
+    .m-radio.m-radio--skin-dark.m-radio--gray > span:after {
+      border: solid #999999;
+      background: #999999; }
+  .m-radio.m-radio--skin-dark.m-radio--gray > input:disabled ~ span:after {
+    border-color: #999999; }
+  .m-radio.m-radio--skin-dark.m-radio--gray > input:checked ~ span {
+    border: 1px solid #999999; }
+  .m-radio.m-radio--skin-dark.m-radio--gray.m-radio--check-bold > input:checked ~ span {
+    border: 2px solid #999999; }
+  .m-radio.m-radio--skin-dark.m-radio--gray > input:disabled ~ span {
+    opacity: 0.6 ;
+    filter: alpha(opacity=60) ; }
+  .m-radio.m-radio--skin-dark.m-radio--gray.m-radio--solid {
+    /*
+        &:hover > input:not([disabled]) ~ span {
+            background: $color-solid-bg-hover; 
+        }
+        */ }
+    .m-radio.m-radio--skin-dark.m-radio--gray.m-radio--solid > span {
+      border: 1px solid transparent !important; }
+      .m-radio.m-radio--skin-dark.m-radio--gray.m-radio--solid > span:after {
+        border: solid #ffffff;
+        background: #ffffff; }
+    .m-radio.m-radio--skin-dark.m-radio--gray.m-radio--solid > input:focus ~ span {
+      border: 1px solid transparent !important; }
+    .m-radio.m-radio--skin-dark.m-radio--gray.m-radio--solid > input:checked ~ span {
+      background: #999999; }
   .m-radio.m-radio--skin-dark.m-radio--darkblue.m-radio--disabled {
     opacity: 0.8 ;
     filter: alpha(opacity=80) ; }
@@ -25918,6 +26743,84 @@ body.m-portlet--fullscreen {
     border: 1px solid transparent !important; }
   .m-radio.m-radio--state-danger.m-radio--solid > input:checked ~ span {
     background: #f4516c; }
+
+.m-checkbox.m-checkbox--state-gray.m-checkbox--disabled {
+  opacity: 0.8 ;
+  filter: alpha(opacity=80) ; }
+
+.m-checkbox.m-checkbox--state-gray > span {
+  border: 1px solid #999999; }
+  .m-checkbox.m-checkbox--state-gray > span:after {
+    border: solid #999999; }
+
+.m-checkbox.m-checkbox--state-gray > input:disabled ~ span:after {
+  border-color: #999999; }
+
+.m-checkbox.m-checkbox--state-gray > input:checked ~ span {
+  border: 1px solid #999999; }
+
+.m-checkbox.m-checkbox--state-gray.m-checkbox--check-bold > input:checked ~ span {
+  border: 2px solid #999999; }
+
+.m-checkbox.m-checkbox--state-gray > input:disabled ~ span {
+  opacity: 0.6 ;
+  filter: alpha(opacity=60) ; }
+
+.m-checkbox.m-checkbox--state-gray.m-checkbox--solid {
+  /*
+        &:hover > input:not([disabled]) ~ span {
+            background: $color-solid-bg-hover; 
+        }
+        */ }
+  .m-checkbox.m-checkbox--state-gray.m-checkbox--solid > span {
+    background: #999999;
+    border: 1px solid transparent !important; }
+    .m-checkbox.m-checkbox--state-gray.m-checkbox--solid > span:after {
+      border: solid #ffffff; }
+  .m-checkbox.m-checkbox--state-gray.m-checkbox--solid > input:focus ~ span {
+    border: 1px solid transparent !important; }
+  .m-checkbox.m-checkbox--state-gray.m-checkbox--solid > input:checked ~ span {
+    background: #999999; }
+
+.m-radio.m-radio--state-gray.m-radio--disabled {
+  opacity: 0.8 ;
+  filter: alpha(opacity=80) ; }
+
+.m-radio.m-radio--state-gray > span {
+  border: 1px solid #999999; }
+  .m-radio.m-radio--state-gray > span:after {
+    border: solid #999999;
+    background: #999999; }
+
+.m-radio.m-radio--state-gray > input:disabled ~ span:after {
+  border-color: #999999; }
+
+.m-radio.m-radio--state-gray > input:checked ~ span {
+  border: 1px solid #999999; }
+
+.m-radio.m-radio--state-gray.m-radio--check-bold > input:checked ~ span {
+  border: 2px solid #999999; }
+
+.m-radio.m-radio--state-gray > input:disabled ~ span {
+  opacity: 0.6 ;
+  filter: alpha(opacity=60) ; }
+
+.m-radio.m-radio--state-gray.m-radio--solid {
+  /*
+        &:hover > input:not([disabled]) ~ span {
+            background: $color-solid-bg-hover; 
+        }
+        */ }
+  .m-radio.m-radio--state-gray.m-radio--solid > span {
+    background: #999999;
+    border: 1px solid transparent !important; }
+    .m-radio.m-radio--state-gray.m-radio--solid > span:after {
+      border: solid #ffffff;
+      background: #ffffff; }
+  .m-radio.m-radio--state-gray.m-radio--solid > input:focus ~ span {
+    border: 1px solid transparent !important; }
+  .m-radio.m-radio--state-gray.m-radio--solid > input:checked ~ span {
+    background: #999999; }
 
 .m-checkbox.m-checkbox--state-darkblue.m-checkbox--disabled {
   opacity: 0.8 ;
@@ -26828,6 +27731,37 @@ body.m-portlet--fullscreen {
   opacity: 1 ;
   filter: alpha(opacity=100) ; }
 
+.m-switch.m-switch--gray:not(.m-switch--outline) input:empty ~ span:before {
+  background-color: #999999; }
+
+.m-switch.m-switch--gray:not(.m-switch--outline) input:empty ~ span:after {
+  color: #999999;
+  background-color: #ffffff;
+  opacity: 0.4 ;
+  filter: alpha(opacity=40) ; }
+
+.m-switch.m-switch--gray:not(.m-switch--outline) input:checked ~ span:before {
+  background-color: #999999; }
+
+.m-switch.m-switch--gray:not(.m-switch--outline) input:checked ~ span:after {
+  opacity: 1 ;
+  filter: alpha(opacity=100) ; }
+
+.m-switch.m-switch--outline.m-switch--gray input:empty ~ span:before {
+  border: 2px solid #ebedf2;
+  background-color: #ffffff; }
+
+.m-switch.m-switch--outline.m-switch--gray input:empty ~ span:after {
+  color: #ffffff; }
+
+.m-switch.m-switch--outline.m-switch--gray input:checked ~ span:before {
+  background-color: #ffffff; }
+
+.m-switch.m-switch--outline.m-switch--gray input:checked ~ span:after {
+  background-color: #999999;
+  opacity: 1 ;
+  filter: alpha(opacity=100) ; }
+
 .m-switch.m-switch--darkblue:not(.m-switch--outline) input:empty ~ span:before {
   background-color: #245488; }
 
@@ -27414,6 +28348,26 @@ body.m-portlet--fullscreen {
 .m-table.m-table--border-danger th, .m-table.m-table--border-danger td {
   border-color: #f4516c; }
 
+.m-table.m-table--head-bg-gray thead th {
+  background: #999999;
+  color: #ffffff;
+  border-bottom: 0;
+  border-top: 0; }
+
+.m-table.m-table--head-separator-gray thead th {
+  border-top: 0;
+  border-bottom: 1px solid #999999; }
+
+.m-table tr.m-table__row--gray th, .m-table tr.m-table__row--gray td {
+  background: #999999;
+  color: #ffffff;
+  border-bottom: 0;
+  border-top: 0; }
+
+.m-table.m-table--border-gray,
+.m-table.m-table--border-gray th, .m-table.m-table--border-gray td {
+  border-color: #999999; }
+
 .m-table.m-table--head-bg-darkblue thead th {
   background: #245488;
   color: #ffffff;
@@ -27831,6 +28785,31 @@ body.m-portlet--fullscreen {
   .m-wizard.m-wizard--1.m-wizard--danger .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span > span {
     color: #ffffff; }
 
+.m-wizard.m-wizard--1.m-wizard--gray .m-wizard__progress .progress .progress-bar {
+  background-color: #999999; }
+  .m-wizard.m-wizard--1.m-wizard--gray .m-wizard__progress .progress .progress-bar:after {
+    background-color: #999999; }
+
+.m-wizard.m-wizard--1.m-wizard--gray .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info .m-wizard__step-number > span {
+  background-color: #999999; }
+  .m-wizard.m-wizard--1.m-wizard--gray .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info .m-wizard__step-number > span > span {
+    color: #ffffff; }
+
+.m-wizard.m-wizard--1.m-wizard--gray .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info a.m-wizard__step-number:hover > span {
+  background-color: #8c8c8c; }
+  .m-wizard.m-wizard--1.m-wizard--gray .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info a.m-wizard__step-number:hover > span > span {
+    color: #ffffff; }
+
+.m-wizard.m-wizard--1.m-wizard--gray .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-number > span {
+  background-color: #cccccc; }
+  .m-wizard.m-wizard--1.m-wizard--gray .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-number > span > span {
+    color: #ffffff; }
+
+.m-wizard.m-wizard--1.m-wizard--gray .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span {
+  background-color: #b3b3b3; }
+  .m-wizard.m-wizard--1.m-wizard--gray .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span > span {
+    color: #ffffff; }
+
 .m-wizard.m-wizard--1.m-wizard--darkblue .m-wizard__progress .progress .progress-bar {
   background-color: #245488; }
   .m-wizard.m-wizard--1.m-wizard--darkblue .m-wizard__progress .progress .progress-bar:after {
@@ -28207,6 +29186,29 @@ body.m-portlet--fullscreen {
   .m-wizard.m-wizard--2.m-wizard--danger .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current a.m-wizard__step-number:hover > span > span {
     color: #ffffff; }
 
+.m-wizard.m-wizard--2.m-wizard--gray .m-wizard__head .m-wizard__progress .progress .progress-bar {
+  background-color: #999999; }
+
+.m-wizard.m-wizard--2.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-number > span {
+  background-color: #999999; }
+  .m-wizard.m-wizard--2.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-number > span > span {
+    color: #ffffff; }
+
+.m-wizard.m-wizard--2.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--done a.m-wizard__step-number:hover > span {
+  background-color: #8c8c8c; }
+  .m-wizard.m-wizard--2.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--done a.m-wizard__step-number:hover > span > span {
+    color: #ffffff; }
+
+.m-wizard.m-wizard--2.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-number > span {
+  background-color: #cccccc; }
+  .m-wizard.m-wizard--2.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-number > span > span {
+    color: #ffffff; }
+
+.m-wizard.m-wizard--2.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current a.m-wizard__step-number:hover > span {
+  background-color: #b3b3b3; }
+  .m-wizard.m-wizard--2.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current a.m-wizard__step-number:hover > span > span {
+    color: #ffffff; }
+
 .m-wizard.m-wizard--2.m-wizard--darkblue .m-wizard__head .m-wizard__progress .progress .progress-bar {
   background-color: #245488; }
 
@@ -28567,6 +29569,29 @@ body.m-portlet--fullscreen {
   .m-wizard.m-wizard--3.m-wizard--danger .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span > span {
     color: #ffffff; }
 
+.m-wizard.m-wizard--3.m-wizard--gray .m-wizard__head .m-wizard__progress .progress .progress-bar {
+  background-color: #999999; }
+
+.m-wizard.m-wizard--3.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info a.m-wizard__step-number > span {
+  background-color: #999999; }
+  .m-wizard.m-wizard--3.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info a.m-wizard__step-number > span > span {
+    color: #ffffff; }
+
+.m-wizard.m-wizard--3.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info a.m-wizard__step-number:hover > span {
+  background-color: #8c8c8c; }
+  .m-wizard.m-wizard--3.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info a.m-wizard__step-number:hover > span > span {
+    color: #ffffff; }
+
+.m-wizard.m-wizard--3.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number > span {
+  background-color: #cccccc; }
+  .m-wizard.m-wizard--3.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number > span > span {
+    color: #ffffff; }
+
+.m-wizard.m-wizard--3.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span {
+  background-color: gray; }
+  .m-wizard.m-wizard--3.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span > span {
+    color: #ffffff; }
+
 .m-wizard.m-wizard--3.m-wizard--darkblue .m-wizard__head .m-wizard__progress .progress .progress-bar {
   background-color: #245488; }
 
@@ -28880,6 +29905,24 @@ body.m-portlet--fullscreen {
   .m-wizard.m-wizard--4.m-wizard--danger .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-icon > i {
     color: #f4516c; }
 
+.m-wizard.m-wizard--4.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info .m-wizard__step-icon > i {
+  color: #999999; }
+
+.m-wizard.m-wizard--4.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current {
+  background-color: #999999; }
+  .m-wizard.m-wizard--4.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number > span {
+    background-color: #666666; }
+    .m-wizard.m-wizard--4.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number > span > span {
+      color: #ffffff; }
+  .m-wizard.m-wizard--4.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span {
+    background-color: gray; }
+    .m-wizard.m-wizard--4.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span > span {
+      color: #ffffff; }
+  .m-wizard.m-wizard--4.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-label {
+    color: #ffffff; }
+  .m-wizard.m-wizard--4.m-wizard--gray .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-icon > i {
+    color: #999999; }
+
 .m-wizard.m-wizard--4.m-wizard--darkblue .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info .m-wizard__step-icon > i {
   color: #245488; }
 
@@ -29061,6 +30104,13 @@ body.m-portlet--fullscreen {
     color: #f4516c; }
   .m-wizard.m-wizard--5.m-wizard--danger .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-number .m-wizard__step-label {
     color: #f4516c; }
+
+.m-wizard.m-wizard--5.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current {
+  border-bottom: 2px solid #999999; }
+  .m-wizard.m-wizard--5.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-number .m-wizard__step-seq {
+    color: #999999; }
+  .m-wizard.m-wizard--5.m-wizard--gray .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-number .m-wizard__step-label {
+    color: #999999; }
 
 .m-wizard.m-wizard--5.m-wizard--darkblue .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current {
   border-bottom: 2px solid #245488; }
@@ -29376,6 +30426,22 @@ body.m-portlet--fullscreen {
   .m-accordion .m-accordion__item--danger .m-accordion__item-head > span {
     color: #ffffff !important; }
   .m-accordion .m-accordion__item--danger .m-accordion__item-body {
+    background-color: #fff !important; }
+
+.m-accordion .m-accordion__item--gray {
+  border: 1px solid #999999 !important;
+  background-color: #999999 !important; }
+  .m-accordion .m-accordion__item--gray .m-accordion__item-head, .m-accordion .m-accordion__item--gray .m-accordion__item-head:hover {
+    background-color: #8c8c8c !important; }
+  .m-accordion .m-accordion__item--gray .m-accordion__item-head .m-accordion__item-mode {
+    color: #ffffff !important; }
+  .m-accordion .m-accordion__item--gray .m-accordion__item-head.collapsed {
+    background-color: #999999 !important; }
+    .m-accordion .m-accordion__item--gray .m-accordion__item-head.collapsed .m-accordion__item-mode {
+      color: #ffffff !important; }
+  .m-accordion .m-accordion__item--gray .m-accordion__item-head > span {
+    color: #ffffff !important; }
+  .m-accordion .m-accordion__item--gray .m-accordion__item-body {
     background-color: #fff !important; }
 
 .m-accordion .m-accordion__item--darkblue {
@@ -30396,6 +31462,11 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
     background-color: #f4516c;
     border-color: #f4516c;
     color: #ffffff; }
+  .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-gray,
+  .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-gray {
+    background-color: #999999;
+    border-color: #999999;
+    color: #ffffff; }
   .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-darkblue,
   .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-darkblue {
     background-color: #245488;
@@ -30609,6 +31680,11 @@ select.m-bootstrap-select {
   .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger {
     color: #ffffff; }
     .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger > .filter-option {
+      opacity: 0.8 ;
+      filter: alpha(opacity=80) ; }
+  .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-gray {
+    color: #ffffff; }
+    .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-gray > .filter-option {
       opacity: 0.8 ;
       filter: alpha(opacity=80) ; }
   .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-darkblue {
@@ -31126,6 +32202,15 @@ select.m-select2 {
   -webkit-box-shadow: 0 3px 6px -3px #f4516c ;
   box-shadow: 0 3px 6px -3px #f4516c ; }
 
+.noUi-target.m-nouislider.m-nouislider--connect-gray .noUi-connect {
+  background: #999999; }
+
+.noUi-target.m-nouislider.m-nouislider--handle-gray .noUi-handle {
+  border: 0;
+  background: #999999;
+  -webkit-box-shadow: 0 3px 6px -3px #999999 ;
+  box-shadow: 0 3px 6px -3px #999999 ; }
+
 .noUi-target.m-nouislider.m-nouislider--connect-darkblue .noUi-connect {
   background: #245488; }
 
@@ -31188,6 +32273,8 @@ select.m-select2 {
     border-color: #ffb822; }
   .m-dropzone.m-dropzone--danger {
     border-color: #f4516c; }
+  .m-dropzone.m-dropzone--gray {
+    border-color: #999999; }
   .m-dropzone.m-dropzone--darkblue {
     border-color: #245488; }
 
@@ -32001,6 +33088,31 @@ select.m-select2 {
   .fc-unthemed .fc-event-dot.fc-start.m-fc-event--solid-danger .fc-time {
     color: #ffffff; }
 
+.fc-unthemed .fc-event.fc-start.m-fc-event--gray .fc-content:before,
+.fc-unthemed .fc-event-dot.fc-start.m-fc-event--gray .fc-content:before {
+  background: #999999; }
+
+.fc-unthemed .fc-event.fc-not-start.fc-end.m-fc-event--solid-gray, .fc-unthemed .fc-event.fc-not-start.fc-not-end.m-fc-event--solid-gray, .fc-unthemed .fc-event.fc-start.m-fc-event--solid-gray,
+.fc-unthemed .fc-event-dot.fc-not-start.fc-end.m-fc-event--solid-gray,
+.fc-unthemed .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--solid-gray,
+.fc-unthemed .fc-event-dot.fc-start.m-fc-event--solid-gray {
+  background: #999999; }
+  .fc-unthemed .fc-event.fc-not-start.fc-end.m-fc-event--solid-gray .fc-title, .fc-unthemed .fc-event.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-title, .fc-unthemed .fc-event.fc-start.m-fc-event--solid-gray .fc-title,
+  .fc-unthemed .fc-event-dot.fc-not-start.fc-end.m-fc-event--solid-gray .fc-title,
+  .fc-unthemed .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-title,
+  .fc-unthemed .fc-event-dot.fc-start.m-fc-event--solid-gray .fc-title {
+    color: #ffffff; }
+  .fc-unthemed .fc-event.fc-not-start.fc-end.m-fc-event--solid-gray .fc-description, .fc-unthemed .fc-event.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-description, .fc-unthemed .fc-event.fc-start.m-fc-event--solid-gray .fc-description,
+  .fc-unthemed .fc-event-dot.fc-not-start.fc-end.m-fc-event--solid-gray .fc-description,
+  .fc-unthemed .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-description,
+  .fc-unthemed .fc-event-dot.fc-start.m-fc-event--solid-gray .fc-description {
+    color: #ffffff; }
+  .fc-unthemed .fc-event.fc-not-start.fc-end.m-fc-event--solid-gray .fc-time, .fc-unthemed .fc-event.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-time, .fc-unthemed .fc-event.fc-start.m-fc-event--solid-gray .fc-time,
+  .fc-unthemed .fc-event-dot.fc-not-start.fc-end.m-fc-event--solid-gray .fc-time,
+  .fc-unthemed .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-time,
+  .fc-unthemed .fc-event-dot.fc-start.m-fc-event--solid-gray .fc-time {
+    color: #ffffff; }
+
 .fc-unthemed .fc-event.fc-start.m-fc-event--darkblue .fc-content:before,
 .fc-unthemed .fc-event-dot.fc-start.m-fc-event--darkblue .fc-content:before {
   background: #245488; }
@@ -32197,6 +33309,21 @@ select.m-select2 {
     .fc-unthemed .fc-popover .fc-body .fc-event.fc-not-start.fc-not-end.m-fc-event--solid-danger .fc-time,
     .fc-unthemed .fc-popover .fc-body .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--solid-danger .fc-time {
       color: #ffffff; }
+  .fc-unthemed .fc-popover .fc-body .fc-event.fc-not-start.fc-not-end.m-fc-event--gray .fc-content:before,
+  .fc-unthemed .fc-popover .fc-body .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--gray .fc-content:before {
+    background: #999999; }
+  .fc-unthemed .fc-popover .fc-body .fc-event.fc-not-start.fc-not-end.m-fc-event--solid-gray,
+  .fc-unthemed .fc-popover .fc-body .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--solid-gray {
+    background: #999999; }
+    .fc-unthemed .fc-popover .fc-body .fc-event.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-title,
+    .fc-unthemed .fc-popover .fc-body .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-title {
+      color: #ffffff; }
+    .fc-unthemed .fc-popover .fc-body .fc-event.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-description,
+    .fc-unthemed .fc-popover .fc-body .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-description {
+      color: #ffffff; }
+    .fc-unthemed .fc-popover .fc-body .fc-event.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-time,
+    .fc-unthemed .fc-popover .fc-body .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--solid-gray .fc-time {
+      color: #ffffff; }
   .fc-unthemed .fc-popover .fc-body .fc-event.fc-not-start.fc-not-end.m-fc-event--darkblue .fc-content:before,
   .fc-unthemed .fc-popover .fc-body .fc-event-dot.fc-not-start.fc-not-end.m-fc-event--darkblue .fc-content:before {
     background: #245488; }
@@ -32273,6 +33400,10 @@ select.m-select2 {
 .fc-unthemed .fc-list-item.m-fc-event--solid-danger .fc-event-dot, .fc-unthemed .fc-list-item.m-fc-event--danger .fc-event-dot {
   background: #f4516c;
   border-color: #f4516c; }
+
+.fc-unthemed .fc-list-item.m-fc-event--solid-gray .fc-event-dot, .fc-unthemed .fc-list-item.m-fc-event--gray .fc-event-dot {
+  background: #999999;
+  border-color: #999999; }
 
 .fc-unthemed .fc-list-item.m-fc-event--solid-darkblue .fc-event-dot, .fc-unthemed .fc-list-item.m-fc-event--darkblue .fc-event-dot {
   background: #245488;
