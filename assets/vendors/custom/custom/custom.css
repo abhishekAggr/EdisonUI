@@ -5,8 +5,10 @@
 #approval-top-tab .btn.m-btn--custom:hover .m-badge--gray {
     color: rgb(255, 255, 255) !important;
 }
-.btn.m-btn--custom
+
+div.m-btn--custom
 {
+    background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 1px 1px #ccc!important;
 }
