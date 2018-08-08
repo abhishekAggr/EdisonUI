@@ -1,10 +1,10 @@
 [{
     "id": "login__welcome",
     "text":"Welcome to Edison",
-    "class": "aaa"
+    "class": ""
 },
 {
     "id": "login__msg",
-    "text":"Donec placerat nisl magna, et faucibus arcu condimentum sed.",
-    "class": "bb"
+    "text":"The three great essentials to achieve anything worthwhile are: Hard work, Stick- to-itiveness, and Common sense.",
+    "class": ""
 }]
