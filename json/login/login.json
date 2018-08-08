@@ -1,0 +1,10 @@
+[{
+    "id": "login__welcome",
+    "text":"Welcome to Edison",
+    "class": "aaa"
+},
+{
+    "id": "login__msg",
+    "text":"Donec placerat nisl magna, et faucibus arcu condimentum sed.",
+    "class": "bb"
+}]
