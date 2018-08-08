@@ -95,7 +95,7 @@ var SnippetLogin = function() {
                 url: '',
                 success: function(response, status, xhr, $form) {
                     // similate 2s delay
-                    window.location.href= 'approval_overview.html';
+                    window.location.href= 'index.html';
                 	// setTimeout(function() {
 	                //     btn.removeClass('m-loader m-loader--right m-loader--light').attr('disabled', false);
 	                //     showErrorMsg(form, 'danger', 'Incorrect username or password. Please try again.');
